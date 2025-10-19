@@ -258,4 +258,158 @@ h1 span img {
   font-size: 4vw;
   color: #f6f6f6;
   font-weight: 500;
+}
+
+.brands {
+  margin-top: 4vw;
+  width: 100%;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+.brands img {
+  height: 80%;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+.brands img:nth-child(2) {
+  height: 150%;
+}
+.brands img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.facilities {
+  margin-top: 2vw;
+}
+.facilities .faci-top {
+  display: flex;
+  justify-content: space-between;
+}
+.facilities .faci-text {
+  width: 60%;
+}
+.facilities .faci-btn {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.facilities .faci-btn .arrow-btn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fd8235;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.facilities .faci-btn .arrow-btn i {
+  color: #f6f6f6;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.facilities .faci-btn .arrow-btn:hover {
+  transform: scale(2.1);
+}
+.facilities .faci-btn .arrow-btn:hover::after {
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+  border: 2px solid #fd8235;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: ring 0.5s ease forwards;
+}
+@keyframes ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+.facilities h2 {
+  font-size: 5rem;
+  color: #f6f6f6;
+}
+.facilities p {
+  width: 65%;
+  line-height: 2.2rem;
+  font-size: 1.3rem;
+  font-family: montserrat;
+  color: #f6f6f6;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.card-cont {
+  margin: 5vw 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.card-cont .card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  background-color: #222222;
+  border-radius: 2rem;
+  position: relative;
+  padding: 6rem 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.card-cont .card h2 {
+  font-size: 3rem;
+}
+.card-cont .card p {
+  font-size: 1rem;
+  line-height: normal;
+  width: 100%;
+}
+.card-cont .card i {
+  font-size: 6rem;
+  color: #535353;
+}
+.card-cont .card .card-btn {
+  position: absolute;
+  bottom: -10%;
+  left: 25%;
+  border-radius: 50%;
+  padding: 1rem 1rem;
+  background-color: #fd8235;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.card-cont .card .card-btn i {
+  font-size: 2rem;
+  color: #f6f6f6;
+}
+.card-cont .card .card-btn h6 {
+  font-size: 2rem;
+  color: #f6f6f6;
+}
+
+#two {
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+}
+
+#orange i {
+  color: #fd8235;
 }/*# sourceMappingURL=style.css.map */
