@@ -7,7 +7,7 @@ $grey: #535353;
 $light-grey: #898989;
 $white: #f6f6f6;
 $orange: #fd8235;
-
+$glass: rgba(255, 255, 255, 0.027);
 @mixin space-between {
   display: flex;
   justify-content: space-between;
@@ -618,5 +618,118 @@ h1 {
     top: -9%;
     right: 5%;
     z-index: 1;
+  }
+}
+
+.img-container-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+
+  .sec-left {
+    flex: 1;
+
+    .img {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      width: 100%;
+      height: 40vw;
+      border: 1rem solid $white;
+      border-radius: 3rem;
+      margin: 2rem 0;
+      transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:nth-child(1) {
+        background-image: url(./assets/img/model08.avif);
+        background-size: cover;
+        background-position: center;
+      }
+      &:nth-child(2) {
+        background-image: url(./assets/img/model-4.jpg);
+        background-size: cover;
+        background-position: center 30%;
+      }
+      &:hover {
+        border: 1rem solid $orange;
+        cursor: pointer;
+      }
+    }
+  }
+  .sec-right {
+    margin-top: 24rem;
+    flex: 1;
+    width: 50%;
+    .img {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      width: 100%;
+      height: 40vw;
+      border: 1rem solid $white;
+      border-radius: 3rem;
+      margin: 2rem 0;
+      transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:nth-child(1) {
+        background-image: url(./assets/img/model-5.jpg);
+        background-size: cover;
+        background-position: center 70%;
+      }
+      &:nth-child(2) {
+        background-image: url(./assets/img/model-7.jpg);
+        background-size: cover;
+        background-position: center 35%;
+      }
+      &:hover {
+        border: 1rem solid $orange;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.text {
+  width: 100%;
+  height: 25%;
+  background-color: $glass;
+  backdrop-filter: blur(5px);
+  padding: 0rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h4 {
+    font-size: 4rem;
+    color: $white;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 1.5rem;
+    color: $white;
+    font-family: Montserrat;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+  }
+}
+
+.plan {
+  background-color: $white;
+  padding: 6rem 1rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 6rem;
+    color: $black;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Montserrat;
+    text-transform: capitalize;
   }
 }
